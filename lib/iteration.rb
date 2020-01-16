@@ -11,8 +11,7 @@ def join_ingredients(src)
     element_index = 0
     inner_results = []
     while element_index < src[row_index].count do
-      inner_results << src[row_index][element_index]
-      break
+      inner_results << "I love #{src[row_index][element_index]}"
     end
     row_index += 1
   end
