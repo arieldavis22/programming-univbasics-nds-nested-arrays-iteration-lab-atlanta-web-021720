@@ -34,7 +34,7 @@ def find_greater_pair(src)
     outer_results << total
     row_index += 1
   end
-  outer_results
+  src
 end
 
 def total_even_pairs(src)
