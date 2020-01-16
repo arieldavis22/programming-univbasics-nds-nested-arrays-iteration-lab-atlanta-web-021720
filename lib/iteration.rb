@@ -13,7 +13,7 @@ def join_ingredients(src)
     inner_results = []
     inner_results << "I love #{src[row_index][element_index]} and #{src[row_index][element_index +1]} on my pizza"
     row_index +=1
-    outer_results << inner_results
+    outer_results << inner_results.join(" ")
   end
   outer_results
 end
