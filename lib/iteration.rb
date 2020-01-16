@@ -10,14 +10,9 @@ def join_ingredients(src)
   outer_results = []
   while row_index <src.count do
     element_index = 0
-    inner_results = []
-    while element_index < src[row_index].count do
-      inner_results << "I love #{src[row_index][element_index]} and #{src[row_index][element_index +1]}"
-      outer_results << inner_results.join
-      row_index += 1
-    end
+    inner_results << "I love #{src[row_index][element_index]} and #{src[row_index][element_index +1]}"
+    row_index +=1
   end
-  outer_results
 end
 
 def find_greater_pair(src)
