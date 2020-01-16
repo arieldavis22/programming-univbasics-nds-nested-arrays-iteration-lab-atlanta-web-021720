@@ -15,10 +15,10 @@ def join_ingredients(src)
       inner_results << "I love #{src[row_index][element_index]}"
       element_index += 1
     end
-    outer_results << inner_results
+    outer_results << inner_results.join
     row_index += 1
   end
-  outer_results.join
+  outer_results
 end
 
 def find_greater_pair(src)
