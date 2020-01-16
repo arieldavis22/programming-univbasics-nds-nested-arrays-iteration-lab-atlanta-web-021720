@@ -10,6 +10,7 @@ def join_ingredients(src)
   outer_results = []
   while row_index <src.count do
     element_index = 0
+    inner_results = []
     inner_results << "I love #{src[row_index][element_index]} and #{src[row_index][element_index +1]}"
     row_index +=1
     outer_results << inner_results
