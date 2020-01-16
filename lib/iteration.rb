@@ -27,12 +27,11 @@ def find_greater_pair(src)
   outer_results = []
   while row_index < src.count do
     element_index = 0
-    inner_results = []
     while element_index < src.count[row_index] do
-      inner_results << total += src[row_index][element_index]
+      total += src[row_index][element_index]
       element_index += 1
     end
-    outer_results << inner_results
+    outer_results << total
     row_index += 1
   end
   outer_results
