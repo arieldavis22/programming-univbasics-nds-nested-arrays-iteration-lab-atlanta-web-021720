@@ -12,12 +12,15 @@ def join_ingredients(src)
   ]
 
   row_index = 0
+  outer_results = []
   while row_index < src.count do
     element_index = 0
+    inner_results = []
     while element_index < src[row_index].count do
-      p "I love #{src[element_index]} and #{src[element_index + 1]} on my pizza"
+      inner_results << "I love #{src[element_index]} and #{src[element_index + 1]} on my pizza"
       element_index += 1
     end
+    outer_results << inner_results
     row_index += 1
   end
 end
